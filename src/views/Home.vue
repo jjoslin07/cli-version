@@ -13,7 +13,7 @@
       <h2>Menu</h2>
       <MenuItem
         v-for="item in simpleMenu"
-        :addToShoppingCart="addToShoppingCart"
+        @add-items-to-cart="addToShoppingCart"
         :name="item.name"
         :image="item.image"
         :price="item.price"
@@ -102,8 +102,8 @@ export default {
 }
 
 .footer {
-  text-align: center;
   font-style: italic;
+  text-align: center;
 }
 
 .menu {
@@ -112,6 +112,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 .shopping-cart {
   position: absolute;
   right: 30px;
