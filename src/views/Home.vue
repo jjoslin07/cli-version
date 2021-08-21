@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app">
+  <div>
     <h1>{{ restaurantName }}</h1>
     <p class="description">
       Welcome to {{ restaurantName }}! We are known for our freshly baked bread
@@ -23,9 +23,9 @@
       />
     </section>
 
-    <aside class="shopping-cart">
+    <div class="shopping-cart">
       <h2>Shopping Cart: {{ shoppingCart }} items</h2>
-    </aside>
+    </div>
 
     <footer class="footer">
       <p>{{ copyright }}</p>
